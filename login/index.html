@@ -17,8 +17,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <style id='wp-block-site-title-inline-css'>
 .wp-block-site-title{box-sizing:border-box}.wp-block-site-title :where(a){color:inherit;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-decoration:inherit}
 </style>
-<style id='wp-block-page-list-inline-css'>
-.wp-block-navigation .wp-block-page-list{align-items:var(--navigation-layout-align,initial);background-color:inherit;display:flex;flex-direction:var(--navigation-layout-direction,initial);flex-wrap:var(--navigation-layout-wrap,wrap);justify-content:var(--navigation-layout-justify,initial)}.wp-block-navigation .wp-block-navigation-item{background-color:inherit}
+<style id='wp-block-navigation-link-inline-css'>
+.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
 </style>
 <link rel='stylesheet' id='wp-block-navigation-css' href='/wp-includes/blocks/navigation/style.min.css?ver=6.7.2' media='all' />
 <style id='wp-block-group-inline-css'>
@@ -47,9 +47,6 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </style>
 <style id='wp-block-columns-inline-css'>
 .wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
-</style>
-<style id='wp-block-navigation-link-inline-css'>
-.wp-block-navigation .wp-block-navigation-item__label{overflow-wrap:break-word}.wp-block-navigation .wp-block-navigation-item__description{display:none}.link-ui-tools{border-top:1px solid #f0f0f0;padding:8px}.link-ui-block-inserter{padding-top:8px}.link-ui-block-inserter__back{margin-left:8px;text-transform:uppercase}
 </style>
 <style id='wp-block-paragraph-inline-css'>
 .is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
@@ -119,9 +116,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			z-index: 100000;
 		}
 </style>
-<link rel='stylesheet' id='twentytwentyfive-style-css' href='/wp-content/themes/twentytwentyfive/style.css?ver=1.0' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='/wp-content/themes/twentytwentyfive/style.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='child-style-css' href='/wp-content/themes/hallo/style.css?ver=6.7.2' media='all' />
+<link rel='stylesheet' id='twentytwentyfive-style-css' href='/wp-content/themes/twentytwentyfive/style.css?ver=6.7.2' media='all' />
 <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="/wp-content/themes/hallo/customElements.js?ver=6.7.2" id="custom_javascript-js"></script>
 <link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/7" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.7.2" />
 <link rel="canonical" href="/login/" />
@@ -174,7 +174,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="wp-block-navigation__responsive-container-content" 
 				data-wp-watch="callbacks.focusFirstElement"
 			 id="modal-1-content">
-								<ul class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation"><ul class="wp-block-page-list"><li class="wp-block-pages-list__item current-menu-item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="/login/" aria-current="page">Login</a></li><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="/lost-password/">Lost Password</a></li><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="/my-account/">My Account</a></li><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="/registration/">Registration</a></li><li class="wp-block-pages-list__item wp-block-navigation-item open-on-hover-click"><a class="wp-block-pages-list__item__link wp-block-navigation-item__content" href="/sample-page/">Sample Page</a></li></ul></ul>
+								<ul class="wp-block-navigation__container is-responsive items-justified-right wp-block-navigation"><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="/my-account/"><span class="wp-block-navigation-item__label">My Account</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="/registration/"><span class="wp-block-navigation-item__label">Registration</span></a></li><li class=" wp-block-navigation-item current-menu-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="/login/" aria-current="page"><span class="wp-block-navigation-item__label">Login</span></a></li><li class=" wp-block-navigation-item wp-block-navigation-link"><a class="wp-block-navigation-item__content"  href="/lost-password/"><span class="wp-block-navigation-item__label">Lost Password</span></a></li></ul>
 							</div>
 						</div>
 					</div>

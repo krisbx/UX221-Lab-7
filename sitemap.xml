@@ -2,17 +2,27 @@
 <urlset>
     <url>
         <loc>
-            http://localhost:8000/hello-world/
+            http://localhost:8000/custom-resume-linkedin-profile-creating/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/food-delivery-on-campus/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/essay-proofreading-editing/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/dorm-room-apartment-cleaning/
         </loc>
     </url>
     <url>
         <loc>
             http://localhost:8000/
-        </loc>
-    </url>
-    <url>
-        <loc>
-            http://localhost:8000/sample-page/
         </loc>
     </url>
     <url>
