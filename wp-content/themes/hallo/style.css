@@ -6,3 +6,130 @@ Template:       twentytwentyfive
 
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
+.grid-container {
+    margin: 0 auto;
+}
+
+a {
+    color: #0d0c4d !important;
+    font-weight: bold !important;
+}
+
+header {
+    background-color: #d5e4f7;
+}
+
+main {
+    background-color: rgb(180, 198, 223) !important;
+    margin-top: 0 !important;
+}
+
+.item-content {
+    color: black;
+}
+
+body {
+    background: #f9fcff;
+    text-align: center;
+}
+
+.main-title a {
+    font-size: 35px;
+}
+
+.wp-block-heading {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 50px;
+    color: rgba(78, 96, 153, 0.6);
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    color: #0f0a4d;
+}
+
+h2 {
+    padding: 16px  !important;
+}
+
+.entry-content {
+    background-color: rgb(233, 242, 255);
+    border: 1px solid rgb(29, 31, 63); 
+    border-radius: 8px; 
+    max-width: 800px;
+    padding: 16px !important;
+    margin: 0 50px !important;
+    margin: 0 auto !important;
+}
+
+@media screen and (min-width: 601px) {
+
+    .wp-block-navigation__responsive-container-content {
+        width: 200px;
+        height: 40px;
+        display: block;
+        position: relative;
+    }
+
+    .wp-block-navigation__responsive-container-content::before {
+        content: 'User Menu';
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+        color:#0f0a4d;
+        width: 200px;
+        position: absolute;
+        left: 0;
+        
+    }
+
+    .wp-block-navigation__responsive-container-content:hover{
+        cursor: pointer;
+    }
+
+    .wp-block-navigation__responsive-container-content ul{
+        display: none;
+        z-index: 1;
+        text-align: left;
+        border-radius: 18px;
+    }
+
+    .wp-block-navigation__responsive-container-content:hover ul{
+        display: block;
+        //position: absolute;
+        top: 100%;
+        background: #fff;
+        border-radius: 18px;
+        border: 1px solid #000;
+    }
+
+    .wp-block-navigation__responsive-container-content ul li{
+        padding: 8px 16px;
+        border-bottom: 1px solid #000;
+        background-color: transparent !important;
+    }
+    .wp-block-navigation__responsive-container-content ul li:last-child{
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        border-bottom: none;
+    }
+    .wp-block-navigation__responsive-container-content ul li:first-child{
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+    }
+
+    .wp-block-navigation__responsive-container-content ul li:hover{
+       background-color: rgb(228, 244, 255) !important;
+
+    }
+
+    .wp-block-navigation__responsive-container-content ul li:hover a{
+        text-decoration: none;
+    }
+
+    .wp-block-navigation__responsive-container-content ul li:hover a span{
+        color: #000000;
+    }
+}
