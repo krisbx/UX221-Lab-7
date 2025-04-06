@@ -3,5 +3,3 @@ class CopyrightYear extends HTMLElement{
         this.innerHTML = new Date().getFullYear();
     }
 }
-
-customElements.define("x-year", CopyrightYear);
